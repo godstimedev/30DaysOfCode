@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+@media (min-width: 375px) {
+  body {
+    max-height: 100vh;
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+    /* background: url(./images/pattern-background-mobile.svg); */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+  }
+  .container {
+    margin: auto;
+    width: 370px;
+    height: auto;
+    margin-top: 9vh;
+    background-color: var(--Very-pale-blue);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px hsl(245, 75%, 52%, 0.1),
+      15px 15px 30px hsl(245, 75%, 52%, 0.1);
+  }
+
+  header img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 1.5em;
+  }
+  main p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--Desaturated-blue);
+  }
+  main h2 {
+    margin-top: 4px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+  }
+  .banner {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0.7em;
+    background-color: var(--Very-Pale-blue);
+    backdrop-filter: 20;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    gap: 0.8em;
+  }
+  .price h3 {
+    color: var(--Dark-blue);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .price p {
+    color: var(--Desaturated-blue);
+  }
+  .banner a {
+    color: var(--Bright-blue);
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  .banner a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  }
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .main-footer button {
+    width: 80%;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--Very-pale-blue);
+    display: block;
+    /* max-width: 230px; */
+    background-color: var(--Bright-blue);
+    padding: 1rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px hsl(245, 75%, 52%, 0.15),
+      15px 15px 30px hsl(245, 75%, 52%, 0.15);
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+  .main-footer h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 440px;
+    height: 90vh;
+  }
+}

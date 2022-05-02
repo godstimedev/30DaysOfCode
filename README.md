@@ -19,7 +19,7 @@ Day13/14 link = https://godstimedev.github.io/30DaysOfCode/day13&14/
 
 
 
-Day15/16 link = https://godstimedev.github.io/30DaysOfCode/day15&16/
+Day15/16 link = https://30-days-of-code.vercel.app/
 
 
 

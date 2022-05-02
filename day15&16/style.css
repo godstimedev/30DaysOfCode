@@ -17,7 +17,7 @@
 
 @media (min-width: 375px) {
   body {
-    max-height: 100vh;
+    height: 100vh;
     font-size: 16px;
     background-color: var(--Pale-blue);
     /* background: url(./images/pattern-background-mobile.svg); */
@@ -28,7 +28,7 @@
   .container {
     margin: auto;
     width: 370px;
-    height: auto;
+    max-height: 70vh;
     margin-top: 9vh;
     background-color: var(--Very-pale-blue);
     border-radius: 20px;
@@ -36,11 +36,11 @@
       15px 15px 30px hsl(245, 75%, 52%, 0.1);
   }
 
-  header img {
+  .header img {
     width: 100%;
     border-radius: 20px 20px 0 0;
   }
-  main {
+  .main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,12 +48,12 @@
     gap: 15px;
     padding: 1.5em;
   }
-  main p {
+  .main p {
     text-align: center;
     font-size: 1.2rem;
     color: var(--Desaturated-blue);
   }
-  main h2 {
+  .main h2 {
     margin-top: 4px;
     font-size: 2rem;
     font-weight: 900;
@@ -71,7 +71,7 @@
     border-radius: 10px;
     gap: 0.8em;
   }
-  .price h3 {
+  .price h2 {
     color: var(--Dark-blue);
     font-weight: 700;
     font-size: 1.2rem;
@@ -112,7 +112,7 @@
   button:hover {
     opacity: 0.7;
   }
-  .main-footer h5 {
+  .main-footer h3 {
     font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
@@ -123,6 +123,17 @@
 @media (min-width: 900px) {
   .container {
     width: 440px;
-    height: 90vh;
   }
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+  bottom: 0;
+  position: fixed;
+}
+.attribution a {
+  color: var(--Bright-blue);
+  text-decoration: none;
 }

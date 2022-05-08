@@ -25,3 +25,9 @@ Day15/16 link = https://30-days-of-code.vercel.app/
 
 
 Day17-20 link = https://godstimedev.github.io/30DaysOfCode/day17-20/
+
+
+
+
+
+Day21-25 link = https://day21-25.vercel.app/

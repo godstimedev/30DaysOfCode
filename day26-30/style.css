@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+:root {
+  /* Primary */
+
+  --Cyan: hsl(180, 66%, 49%);
+  --Dark-Violet: hsl(257, 27%, 26%);
+
+  /* ### Secondary */
+
+  --Red: hsl(0, 87%, 67%);
+
+  /* ### Neutral */
+
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish-Violet: hsl(257, 7%, 63%);
+  --Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: var(--Gray); */
+  font-family: "Poppins";
+  font-size: 18px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  color: var(--Grayish-Violet);
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+.active {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 5rem 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: var(--Dark-Violet);
+}
+.active .list li > a {
+  color: #fff;
+  gap: 5rem;
+}
+
+.active .list li > a:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.menu {
+  margin-left: -5rem;
+}
+
+.menu .list li {
+  display: inline-block;
+  margin-left: 20px;
+  opacity: 0.5;
+}
+.menu .list li:hover {
+  opacity: 1;
+}
+
+.menu .list .mobile {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Very-Dark-Blue);
+}
+
+.container {
+  max-width: 160rem;
+  margin: 1rem auto;
+  padding: 0 5rem;
+}
+
+button {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: var(--Cyan);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+}
+button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.last-nav .login {
+  opacity: 0.5;
+}
+.last-nav .login:hover {
+  opacity: 1;
+}
+
+.last-nav button {
+  margin-left: 1rem;
+}
+
+/* Main */
+
+section {
+  padding: 5rem;
+}
+.page1 {
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  overflow: hidden;
+}
+
+.page1 .left {
+  max-width: 30vw;
+}
+.page1 .left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Violet);
+}
+.page1 .left p {
+  color: var(--Grayish-Violet);
+}
+.page1 .left button {
+  margin-top: 1.5rem;
+}
+
+.page1 .right {
+  flex-basis: 50%;
+  margin-left: 5rem;
+}
+.right img {
+  width: 125%;
+}
+
+/* section */
+
+.form {
+  position: relative;
+  top: -6vh;
+  width: 100%;
+  max-width: 70vw;
+  background: url(./images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--Dark-Violet);
+  padding: 2.5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-textbox {
+  width: 45rem;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+}
+
+.submit-btn {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: var(--Cyan);
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  background-color: hsla(180, 66%, 49%, 0.6);
+}
+
+.bg {
+  background-color: hsla(0, 0%, 75%, 0.3);
+}
+/* stats */
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  max-width: 38vw;
+  text-align: center;
+}
+
+.head h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Violet);
+}
+
+.head p {
+  color: var(--Grayish-Violet);
+}
+
+.main-stats {
+  margin-top: 5rem;
+  padding-top: 2.5rem;
+  display: flex;
+  height: 65vh;
+}
+
+.icon img {
+  padding: 0.5rem;
+  background-color: var(--Dark-Violet);
+  border-radius: 50%;
+}
+.card-bg1 {
+  background-color: #fff;
+  width: 30vw;
+  height: 40vh;
+  border-radius: 7px;
+  margin-right: 1rem;
+}
+.card-bg2 {
+  background-color: #fff;
+  width: 30vw;
+  height: 40vh;
+  border-radius: 7px;
+  margin-right: 1rem;
+  margin-top: 3rem;
+}
+.card-bg3 {
+  background-color: #fff;
+  width: 30vw;
+  height: 40vh;
+  border-radius: 7px;
+  margin-top: 6rem;
+}
+.card {
+  position: relative;
+  top: -9vh;
+  padding: 2rem;
+  width: 30vw;
+}
+.card h3 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Violet);
+}
+.card p {
+  padding-top: 1rem;
+  color: var(--Grayish-Violet);
+}
+.cyan {
+  display: inline-block;
+  position: absolute;
+  left: 33.3vw;
+  align-self: center;
+  border: 5px solid var(--Cyan);
+  width: 15px;
+}
+.cyan2 {
+  display: inline-block;
+  position: absolute;
+  left: 64.5vw;
+  align-self: center;
+  border: 5px solid var(--Cyan);
+  width: 15px;
+}
+/* .one {
+  margin-right: 1rem;
+}
+.two {
+  margin-right: 1rem;
+} */
+
+/* banner */
+.banner {
+  background: url(./images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem;
+  background-color: var(--Dark-Violet);
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner-content h2 {
+  color: #fff;
+}
+
+/* footer */
+.footer {
+  background-color: var(--Very-Dark-Violet);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.footer-container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 3rem 5rem;
+}
+/* .footer-logo img {
+  color: white;
+} */
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style-type: none;
+}
+ul li:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.list1 > p {
+  padding-bottom: 1rem;
+  color: #fff;
+}
+.list2 > p {
+  padding-bottom: 1rem;
+  color: #fff;
+}
+.list3 > p {
+  padding-bottom: 1rem;
+  color: #fff;
+}
+
+.list1 > li {
+  color: var(--Gray);
+}
+.list2 > li {
+  color: var(--Gray);
+}
+.list3 > li {
+  color: var(--Gray);
+}
+
+.footer-icon img {
+  padding: 0.5rem;
+}
+.footer-icon img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    color: var(--Grayish-Violet);
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+}

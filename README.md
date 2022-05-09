@@ -36,4 +36,4 @@ Day21-25 link = https://day21-25.vercel.app/
 
 
 
-Day26-30 link = https://day-26-30.vercel.app/
+Day26-30 link = https://day26-30.vercel.app/
